@@ -1,0 +1,853 @@
+/* -------------- Inicio generales --------------------*/
+
+* {
+    margin:  0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#iconos {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* -------------- fin generales --------------------*/
+
+/* -------------- Inicio Header --------------------*/
+
+header {
+    position: fixed;
+    width: 100%;
+    color: black;
+    z-index: 20;
+}
+
+.containerHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efcfd5;
+    width: 100%;
+}
+
+.containerHeader .elementosHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    margin: 0 0;
+    height: 14vh;
+}
+
+.containerHeader .elementosHeader button img {
+    width: 25px;
+    height: 25px;
+}
+
+.containerHeader .elementosHeader button {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.containerHeader .elementosHeader input {
+    width: 10vw;
+    height: 4vh;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(197, 167, 150, 0.8);
+    border: white solid 2px;
+}
+
+.containerHeader .elementosHeader input:hover {
+    width: 16vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: white;
+    transition: 1s;
+}
+
+.containerHeader #elementosHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.containerHeader #elementosHeader a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.containerHeader #elementosHeader img {
+    width: 35px;
+    height: 35px;
+}
+
+.containerHeader #elementosHeader h4 {
+    margin-top: 7px;
+    margin-right: 4vw;
+    color: black;
+}
+
+#logo {
+    width: 18vw;
+    border-radius: 10px;
+}
+
+/* -------------- Fin Header --------------------*/
+
+/* -------------- Inicio Nav --------------------*/
+
+nav {
+    position: fixed;
+    margin-top: 7.7rem;
+    background-color: rgba(239, 207, 213, .9);
+    font-size: 15px;
+    width: 100%;
+    z-index: 20;
+    height: 3.5rem;
+    font-weight: bold;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    border-bottom: white solid 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.menu-horizontal > li:hover {
+    background-color: white;
+}
+
+.menu-horizontal > li >a:hover{
+    border-bottom: black solid 2px;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 167px;
+    background-color: rgba(197, 167, 150, 0.8);
+}
+
+.menu-horizontal > li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: white;
+    border-bottom: black solid 2px;
+}
+
+.menu-vertical li a {
+    display: block;
+    padding: 1rem 1rem 1rem 2rem;
+    color: black;
+}
+
+.promocion {
+    display: flex;
+    height: 200px;
+    margin-top: 8vh;
+    align-self: center;
+    width: 300px;
+}
+
+.promocion button {
+    align-self: center;
+    height: 150px;
+    background-color: white;
+    border: gray solid 2px;
+    color: gray;
+}
+
+.promocion button:hover {
+    color: #efcfd5;
+    background-color: gray;
+    border: #efcfd5 solid 3px;
+}
+
+/* -------------- Fin Nav --------------------*/
+
+/* -------------- Inicio contacto prefoot --------------------*/
+
+#canales {
+    display: flex;
+    flex-direction: column;
+    background-color: #15d48c;
+    height: 38vh;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.containerAC {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px 10px;
+}
+
+.subcontenedores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 18vw;
+}
+
+.subcontenedores img {
+    width: 38px;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+/* -------------- Fin contacto prefoot --------------------*/
+
+/* -------------- Inicio footer --------------------*/
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 70vh;
+}
+
+.contenedorFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subcontenedorFooter1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.subcontenedorFooter2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.subcontenedorFooter1 .parte1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.subcontenedorFooter1 .parte2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subcontenedorFooter1 .parte2 img {
+    width: 59px;
+    height: 63px;
+}
+
+#fondo {
+    background-color: white;
+    height: 63px;
+    width: 59px;
+    border-radius: 10px;
+}
+
+.subcontenedorFooter1 h3 {
+    padding: 4vh;
+}
+
+.subcontenedorFooter1 h5 {
+    padding: 1.5vh;
+    font-size: medium;
+}
+
+
+.subcontenedorFooter2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.subcontenedorFooter2 h3 {
+    padding: 4vh;
+}
+
+.subcontenedorFooter2 p{
+    margin: 8px 20px;
+    font-size: large;
+}
+
+/* -------------- Fin Footer --------------------*/
+
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+/* -----------------------------------------------*/
+
+
+/* -------------- Inicio seccion 1 --------------------*/
+
+
+#seccion1 {
+    width: 100%;
+}
+
+video {
+    margin-top: 29vh;
+    height: 80vh;
+}
+
+.videoContainer button {
+    align-self: center;
+    margin: 10px 0;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 120vh;
+}
+
+/* -------------- Fin Seccion 1  --------------------*/
+
+/* -------------- Inicio Seccion 2  --------------------*/
+
+.contenedorS2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.contenedorS2 img {
+    height: 170px;
+    width: 260px;
+    border-radius: 5%;
+    border: 2px solid #efcfd5;
+}
+
+/* -------------- Fin Seccion 2  --------------------*/
+
+/* -------------- Inicio Seccion 3  --------------------*/
+
+.contenedorS3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorS3 .parte1 img {
+    height: 90vh;
+    width: 700px;
+}
+
+.contenedorS3 .parte2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenedorS3 .parte2 img {
+    height: 45vh;
+    width: 350px;
+    margin: 20px 0;
+}
+
+/* -------------- Fin Seccion 3  --------------------*/
+
+
+/* -------------- estilos hoja SENCILLO, DOBLE, QUEEN Y KING  --------------------*/
+/* -------------- estilos hoja SENCILLO, DOBLE, QUEEN Y KING  --------------------*/
+/* -------------- estilos hoja SENCILLO, DOBLE, QUEEN Y KING  --------------------*/
+/* -------------- estilos hoja SENCILLO, DOBLE, QUEEN Y KING  --------------------*/
+/* -------------- estilos hoja SENCILLO, DOBLE, QUEEN Y KING  --------------------*/
+/* -------------- estilos hoja SENCILLO, DOBLE, QUEEN Y KING  --------------------*/
+
+.panoramica {
+    width: 100%;
+}
+
+.panoramica img {
+    width: 100%;
+    height: 35rem;
+}
+
+.atajos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(77, 74, 74, 0.521);
+    height: 20rem;
+}
+
+.gama {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    border: white solid 2px;
+    height: 15rem;
+    width: 15rem;
+    color: black;
+    font-size: 1.5em;
+    background-color: white;
+}
+
+.gama:hover {
+    border: rgba(197, 167, 150, 0.8) solid 4px;
+}
+
+.gama img {
+    height: 8rem;
+    width: 11rem;
+    border-radius: 30%;
+    border: transparent solid 2px;
+}
+
+.gama img:hover {
+    height: 9rem;
+    width: 13rem;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 25rem;
+}
+
+.contenProductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(197, 167, 150, 0.8);
+    height: 40vh;
+    width: 30vw;
+    margin: 10px 10px;
+    border-radius: 5%;
+}
+
+.contenProductos img{
+    height: 26vh;
+    width: 24vw;
+    border-radius: 2%;
+}
+
+.contenProductos span{
+    padding-top: 2px;
+    text-align: center;
+    width: 8vw;
+    background-color: rgba(200, 30, 30, .8);
+    margin-right: 16vw;
+}
+
+.contenProductos h5{
+    Color: rgba(200, 30, 30, .8);
+}
+
+.productos h2{
+    text-align: center;
+}
+
+
+/* -------------- estilos hoja ALMOHADAS Y SABANAS  --------------------*/
+/* -------------- estilos hoja ALMOHADAS Y SABANAS  --------------------*/
+/* -------------- estilos hoja ALMOHADAS Y SABANAS  --------------------*/
+/* -------------- estilos hoja ALMOHADAS Y SABANAS  --------------------*/
+/* -------------- estilos hoja ALMOHADAS Y SABANAS  --------------------*/
+/* -------------- estilos hoja ALMOHADAS Y SABANAS  --------------------*/
+
+.otrosProductos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 70rem;
+    padding-top: 22vh;
+}
+
+.contenOtrosProductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(197, 167, 150, 0.8);
+    height: 40vh;
+    width: 30vw;
+    margin: 10px 10px;
+    border-radius: 5%;
+}
+
+.contenOtrosProductos img{
+    height: 26vh;
+    width: 24vw;
+    border-radius: 2%;
+}
+
+.contenOtrosProductos span{
+    padding-top: 2px;
+    text-align: center;
+    width: 8vw;
+    background-color: rgba(200, 30, 30, .8);
+    margin-right: 16vw;
+}
+
+.contenOtrosProductos h5{
+    Color: rgba(200, 30, 30, .8);
+}
+
+.otrosProductos h2{
+    text-align: center;
+}
+
+
+/* -------------- estilos hoja EMPRESA  --------------------*/
+/* -------------- estilos hoja EMPRESA  --------------------*/
+/* -------------- estilos hoja EMPRESA  --------------------*/
+/* -------------- estilos hoja EMPRESA  --------------------*/
+/* -------------- estilos hoja EMPRESA  --------------------*/
+/* -------------- estilos hoja EMPRESA  --------------------*/
+
+.empresaS1 {
+    display: flex;
+    padding-top: 28vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    text-align: center;
+    height: 200vh;
+}
+
+.aboutUs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 120px 30px 120px;
+}
+
+.aboutUs h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.aboutUs p{
+    text-align: justify;
+    font-size: 17px;
+}
+
+.aboutUs img {
+    margin-top: 20px;
+    height: 45vh;
+    width: 100%;
+}
+
+.valores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mision, .vision {
+    width: 40%;
+    font-size: 17px;
+}
+
+.mision h2 {
+    font-size: 40px;
+}
+
+.vision h2 {
+    font-size: 40px;
+}
+
+.mision p {
+    text-align: justify;
+}
+
+.vision p {
+    text-align: justify;
+}
+
+
+/* -------------- estilos hoja CONTACTO --------------------*/
+/* -------------- estilos hoja CONTACTO --------------------*/
+/* -------------- estilos hoja CONTACTO --------------------*/
+/* -------------- estilos hoja CONTACTO --------------------*/
+/* -------------- estilos hoja CONTACTO --------------------*/
+/* -------------- estilos hoja CONTACTO --------------------*/
+
+.datos {
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+    height: 180vh;
+}
+
+.datosP1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.otrosCanales {
+    width: 30%;
+    height: 30vh;
+    text-align: center;
+    border: black solid 2px;
+    border-radius: 15px;
+}
+
+.otrosCanales h2 {
+    margin: 2vh 3vw;
+}
+
+.otrosCanales p {
+    margin-top: 30px;
+}
+
+.otrosCanales img {
+    padding-top: 5px;
+    width: 60px;
+    height: 60px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(156, 141, 144, 0.5);
+    width: 37vw;
+    height: 93vh;
+    border-radius: 15px;
+}
+
+.formulario h2 {
+    margin-bottom: 10px;
+}
+
+.formulario input {
+    height: 3vh;
+    width: 60vh;
+    padding: 3vh;
+    margin: 10px 0;
+    font-size: 17px;
+    border-top: transparent solid 1px;
+    border-left: transparent solid 1px;
+    border-right: transparent solid 1px;
+    border-bottom: #efcfd5 solid 3px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.formulario input:hover {
+    border-bottom: black solid 3px;
+    outline: 0;
+}
+
+.formulario textarea {
+    font-size: 15px;
+    width: 30vw;
+    margin: 5px 0;
+    padding: 8px;
+    border-top: transparent solid 1px;
+    border-left: transparent solid 1px;
+    border-right: transparent solid 1px;
+    border-bottom: #efcfd5 solid 3px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.formulario textarea:hover {
+    border-bottom: black solid 3px;
+    outline: 0;
+}
+
+#botones {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+}
+
+.formulario button {
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    color: black;
+    border: white solid 3px;
+    font-weight: bold;
+}
+
+.formulario button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* -------------- estilos hoja DESCRIPCION --------------------*/
+/* -------------- estilos hoja DESCRIPCION --------------------*/
+/* -------------- estilos hoja DESCRIPCION --------------------*/
+/* -------------- estilos hoja DESCRIPCION --------------------*/
+/* -------------- estilos hoja DESCRIPCION --------------------*/
+/* -------------- estilos hoja DESCRIPCION --------------------*/
+
+.descripcionPD {
+    width: 100%;
+    padding-top: 28vh;
+}
+
+.contenPD {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 72vh;
+}
+
+.elementosPD1 {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elementosPD2 {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elementosPD0 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elementosPD1 img {
+    width: 75px;
+    height: 60px;
+    border: gray solid 2px;
+    margin: 5px 5px;
+    padding: 7px 7px 7px 7px;
+    border-radius: 10px;
+}
+
+.elementosPD2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #efcfd5;
+    width: 21vw;
+    height: 65vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.elementosPD2 h2 {
+    font-weight: bold;
+}
+
+.elementosPD2 h4 {
+    color: brown;
+}
+
+.elementosPD2 button{
+    margin: 5px 5px;
+    height: 7vh;
+    width: 12vw;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.elementosPD2 button:hover {
+    background-color: #15d48c;
+    color: white;
+}
+
+/* -------------- estilos hoja TIENDAS --------------------*/
+/* -------------- estilos hoja TIENDAS --------------------*/
+/* -------------- estilos hoja TIENDAS --------------------*/
+/* -------------- estilos hoja TIENDAS --------------------*/
+/* -------------- estilos hoja TIENDAS --------------------*/
+/* -------------- estilos hoja TIENDAS --------------------*/
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26vh;
+    padding-bottom: 5vh;
+}
+
+.mapa h2{
+    text-align: center;
+    margin: 15px 10px;
+}
+
+.mapa p {
+    text-align: center;
+    margin: 30px 10px;
+}
